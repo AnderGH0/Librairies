@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.red {
+    background-color: rgb(200, 70, 70);
+    height: 200vh;
+}
+
+.blue {
+    background-color: rgb(70, 70, 200);
+    height: 100vh;
+}

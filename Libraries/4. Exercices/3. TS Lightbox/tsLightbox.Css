@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+body {
+    background-color: rgb(56, 56, 127);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 630px;
+    display: grid;
+    grid-template-areas: 
+                        "tl tm tr"
+                        "ml mm mr"
+                        "bl bm br";
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    gap: 5px;
+    background-color: rgb(88, 136, 179);
+    border: 5px solid rgb(88, 136, 179);;
+}
+ 
+.img1 {
+    grid-area: "tl";
+}
+.img2 {
+    grid-area: "tm";
+}
+.img3 {
+    grid-area: "tr";
+}
+.img4 {
+    grid-area: "ml";
+}
+.img5 {
+    grid-area: "mm";
+}
+.img6 {
+    grid-area: "mr";
+}
+.img7 {
+    grid-area: "bl";
+}
+.img8 {
+    grid-area: "bm";
+}
+.img9 {
+    grid-area: "br";
+}
+
+
+

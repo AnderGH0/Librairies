@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 50px;
+    background-color: rgb(141, 197, 197);
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+/* hamburger */
+.hamburger {
+    width: 60px;
+    height: 40px;
+    position: relative; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.hamburger:hover{
+    cursor:pointer;
+    background-color: rgb(106, 148, 148);
+    border-radius: 3px;
+}
+.line, .line::before, .line::after {
+    position: absolute;
+    height: 4px;
+    width: 50px;
+    background-color: black;
+    content: "";
+}
+.line::before {
+    transform: translate(0px, 7px);
+}
+.line::after {
+    transform: translate(0px, -7px);
+}
+/* Nav bar */
+.nav-bar {
+    width: 400px;
+    height: 50vh;
+    background-color: darkolivegreen;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s ease;
+}
+li {
+    list-style: none;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{  
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgb(62, 78, 35);
+}
+/* Cross */
+.cross {
+position: relative;
+top: 0;
+right:-45%;
+width: 50px;
+height: 50px;
+}
+.cross:hover{
+    cursor: pointer;
+    background-color: rgb(62, 78, 35);
+    border-radius: 3px;
+}
+.diagonal, .diagonal::after {
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: black;
+    content: "";
+    
+}
+
+.diagonal {
+    top:18px;
+    transform: rotate(45deg);
+}
+.diagonal::after {
+    transform: rotate(-90deg);
+}
+.slide-in {
+    right: 0;
+}

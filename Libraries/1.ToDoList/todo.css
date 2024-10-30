@@ -1,0 +1,7 @@
+.todoItem {
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+    display:flex;
+    justify-content: space-between;
+    max-width:250px;
+}
